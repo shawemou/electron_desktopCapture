@@ -9,6 +9,10 @@ app.on('window-all-closed', () => {
     }
 })
 
+/**
+ *默认情况下, 网页的 cookie 和缓存将存储在 userData(c:/user/admin/AppData) 目录下。
+ * 如果要更改这个位置, 你需要在 app 模块中的  ready 事件被触发之前重写 userData 的路径。
+ */
 app.setPath('userData', __dirname + '/saved_recordings')
 
 app.on('ready', () => {
