@@ -1,12 +1,8 @@
 # Desktop Capturer
-
-A sample app allows you to choose which screen or window to be captured with
-`getUserMedia` API.
+一个录屏exe,点击开始录屏-->录制屏幕-->停止录屏,会生成一个需要保存的视频文件
 
 ## APIs
-
-[desktopCapturer](https://github.com/atom/electron/blob/master/docs/api/desktop-capturer.md)
-
-## Screenshot
-
-![screenshot](https://cloud.githubusercontent.com/assets/2557445/10268326/993e4f9a-6ae7-11e5-8fd1-a24b9800b9ce.gif)
+- `npm install` 安装依赖
+- `electron .`  演示
+- `electron-builder --win --x64`  window打包(64位)
+- `electron-builder --win --ia32`  window打包(32位)
