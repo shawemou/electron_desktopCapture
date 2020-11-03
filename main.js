@@ -23,7 +23,7 @@ app.on('ready', () => {
         webPreferences: { nodeIntegration: true },
         backgroundColor: '#D6D8DC',
         // //是否隐藏菜单栏
-        // autoHideMenuBar: true
+        autoHideMenuBar: true
     })
 
     mainWindow.loadURL('file://' + __dirname + '/index.html')
