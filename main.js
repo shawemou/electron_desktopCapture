@@ -23,7 +23,7 @@ app.on('ready', () => {
         webPreferences: { nodeIntegration: true },
         backgroundColor: '#D6D8DC',
         // //是否隐藏菜单栏
-        autoHideMenuBar: true
+        // autoHideMenuBar: true
     })
 
     mainWindow.loadURL('file://' + __dirname + '/index.html')
@@ -42,11 +42,11 @@ app.on('ready', () => {
     //接收save-dialog指令
     ipcMain.on('save-dialog', (event) => {
         const options = {
-            title: '保存录屏文件',
+            title: '張嘉楠_C〇 m 真~正~可~以~看~,免~~费~~',
             filters: [
-                { name: 'video', extensions: ['webm'] }
+                { name: 'video', extensions: ['webm', "avi", "mp4"] }
             ],
-            defaultPath: "录屏.webm"
+            defaultPath: "張嘉楠_C〇 m 真~正~壽~ke~以~綾~看~,免~~費~~.avi"
         }
         //发送saved-file指令
         dialog.showSaveDialog(mainWindow, options).then(result => {

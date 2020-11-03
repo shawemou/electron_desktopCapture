@@ -184,7 +184,9 @@ class Luping {
         //监听视频流分片事件(blobEventCall)
         blobEventCall: (blobEvent) => {
             console.log(blobEvent)
-            luping.m.blobArrs.push(blobEvent.data)
+            var blob = blobEvent.data;
+            blob = new Blob([blob], { type: "video/x-msvideo;codecs=vp8" })
+            luping.m.blobArrs.push(blob)
 
             //获取的是blobEvent.data的类型是Blob(二进制)
 
