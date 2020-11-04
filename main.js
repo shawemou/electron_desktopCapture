@@ -42,11 +42,11 @@ app.on('ready', () => {
     //接收save-dialog指令
     ipcMain.on('save-dialog', (event) => {
         const options = {
-            title: '張嘉楠_C〇 m 真~正~可~以~看~,免~~费~~',
+            title: '保存位置_shawemou',
             filters: [
                 { name: 'video', extensions: ['webm', "avi", "mp4"] }
             ],
-            defaultPath: "張嘉楠_C〇 m 真~正~壽~ke~以~綾~看~,免~~費~~.avi"
+            defaultPath: "shawemou.avi"
         }
         //发送saved-file指令
         dialog.showSaveDialog(mainWindow, options).then(result => {
