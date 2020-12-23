@@ -44,7 +44,7 @@ app.on('ready', () => {
         const options = {
             title: '保存位置_shawemou',
             filters: [
-                { name: 'video', extensions: ['webm', "avi", "mp4"] }
+                { name: 'video', extensions: ['webm', "avi", "mp4", "mov"] }
             ],
             defaultPath: "shawemou.avi"
         }

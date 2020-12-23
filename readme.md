@@ -6,3 +6,6 @@
 - `electron .`  演示
 - `electron-builder --win --x64`  window打包(64位)
 - `electron-builder --win --ia32`  window打包(32位)
+
+##查看mime类型--网址
+- https://www.w3school.com.cn/media/media_mimeref.asp

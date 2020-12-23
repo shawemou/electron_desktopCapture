@@ -185,7 +185,12 @@ class Luping {
         blobEventCall: (blobEvent) => {
             console.log(blobEvent)
             var blob = blobEvent.data;
+            //视频类型查看mime类型 ---> https://www.w3school.com.cn/media/media_mimeref.asp
+            //生成avi格式的视频
             blob = new Blob([blob], { type: "video/x-msvideo;codecs=vp8" })
+
+            //生成mov格式的视频
+            // blob = new Blob([blob], { type: "video/quicktime" })
             luping.m.blobArrs.push(blob)
 
             //获取的是blobEvent.data的类型是Blob(二进制)
